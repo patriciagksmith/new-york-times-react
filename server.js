@@ -25,7 +25,7 @@ app.use(express.static("public"));
 mongoose.Promise = Promise;
 if (process.env.NODE_ENV === 'production') {
     console.log('node env is', process.env.NODE_ENV);
-    mongoose.connect('mongodb://<patriciagksmith>:<Webdsnr62>@ds117759.mlab.com:17759/nytreact');
+    mongoose.connect('mongodb://heroku_7x837pj5:g914t5n5ik2e9rlfqb568tpvbe@ds117759.mlab.com:17759/heroku_7x837pj5');
 } else {
     console.log('node env is', process.env.NODE_ENV);
     mongoose.connect('mongodb://localhost/nytreact');
