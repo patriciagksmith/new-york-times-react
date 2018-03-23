@@ -1,6 +1,6 @@
 module.exports = {
 
-  entry: "./app/app.js",
+  entry: "./client/app.js",
 
 
   output: {
@@ -14,7 +14,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        include:/app/,
+        include:/client/,
 
         query: {
           
