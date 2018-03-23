@@ -1,0 +1,35 @@
+{
+  "name": "new-york-times-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4",
+    "morgan": "^1.8.2",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "react-notification-system": "^0.2.14",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react-dom": "^0.14.9",
+    "webpack": "^1.15.0"
+  }
+}
